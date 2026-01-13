@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { COLORS, CHUNK_SIZE } from '../constants';
+import { COLORS, CHUNK_SIZE } from '../constants.tsx';
 
 const PathChunk: React.FC<{ z: number; isIntro?: boolean }> = ({ z, isIntro }) => {
   return (

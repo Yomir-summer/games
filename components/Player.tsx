@@ -2,7 +2,7 @@
 import React, { useRef } from 'react';
 import { useFrame } from '@react-three/fiber';
 import * as THREE from 'three';
-import { COLORS, LANE_WIDTH } from '../constants';
+import { COLORS, LANE_WIDTH } from '../constants.tsx';
 
 interface PlayerProps {
   lane: number;

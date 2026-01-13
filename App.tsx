@@ -2,15 +2,15 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { PerspectiveCamera, OrbitControls } from '@react-three/drei';
-import { GameState, ObstacleData, CoinData, PowerUpData, PowerUpType } from './types';
+import { GameState, ObstacleData, CoinData, PowerUpData, PowerUpType } from './types.ts';
 import { 
   LANE_WIDTH, INITIAL_SPEED, SPEED_INCREMENT, 
   JUMP_STRENGTH, GRAVITY, SPAWN_DISTANCE, DESPAWN_DISTANCE 
-} from './constants';
-import { Environment } from './components/Environment';
-import { Player } from './components/Player';
-import { Obstacle, Coin, PowerUp } from './components/GameObjects';
-import { getGameOverMessage } from './services/geminiService';
+} from './constants.tsx';
+import { Environment } from './components/Environment.tsx';
+import { Player } from './components/Player.tsx';
+import { Obstacle, Coin, PowerUp } from './components/GameObjects.tsx';
+import { getGameOverMessage } from './services/geminiService.ts';
 import { Trophy, Coins, Play, RotateCcw, Zap, Shield, Magnet, ArrowLeft, ArrowRight, ArrowUp, ArrowDown } from 'lucide-react';
 
 const App: React.FC = () => {

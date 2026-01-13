@@ -2,8 +2,8 @@
 import React, { useRef } from 'react';
 import { useFrame } from '@react-three/fiber';
 import * as THREE from 'three';
-import { ObstacleData, CoinData, PowerUpData } from '../types';
-import { LANE_WIDTH, COLORS } from '../constants';
+import { ObstacleData, CoinData, PowerUpData } from '../types.ts';
+import { LANE_WIDTH, COLORS } from '../constants.tsx';
 
 export const Obstacle: React.FC<{ data: ObstacleData }> = ({ data }) => {
   const x = data.lane * LANE_WIDTH;
